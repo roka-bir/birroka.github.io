@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bir Roka - Cloud Engineer | System Administrator | Network Engineer">
     
@@ -10,7 +10,301 @@
     
     <title>Bir Roka | IT Infrastructure Professional</title>
     <link rel="stylesheet" href="style.css">
-   <link rel="icon" type="image/svg+xml" href="bir-roka-logo.svg">
+    <link rel="icon" type="image/svg+xml" href="bir-roka-logo.svg">
+    
+    <!-- Mobile-First Text Alignment Styles -->
+    <style>
+        /* ========================================
+           MOBILE FIRST - Base Styles (320px+)
+           Default: Center aligned for mobile
+        ======================================== */
+        
+        /* Global Mobile Text Alignment */
+        body {
+            text-align: center;
+        }
+        
+        /* Navigation */
+        .navbar .container {
+            text-align: center;
+            flex-direction: column;
+        }
+        
+        .nav-links {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Hero Section */
+        .hero-content {
+            text-align: center;
+        }
+        
+        .hero-content h1,
+        .hero-content .title,
+        .hero-content .description {
+            text-align: center;
+        }
+        
+        .hero-buttons {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+        }
+        
+        /* About Section */
+        .about-text {
+            text-align: center;
+        }
+        
+        .about-text p {
+            text-align: center;
+        }
+        
+        .expertise-areas {
+            text-align: center;
+        }
+        
+        .area {
+            text-align: center;
+        }
+        
+        .area h3,
+        .area p {
+            text-align: center;
+        }
+        
+        /* Skills Section */
+        .skill-category {
+            text-align: center;
+        }
+        
+        .skill-category h3 {
+            text-align: center;
+        }
+        
+        .skill-tags {
+            justify-content: center;
+        }
+        
+        /* Projects Section */
+        .project-card {
+            text-align: center;
+        }
+        
+        .project-card h3,
+        .project-card p {
+            text-align: center;
+        }
+        
+        .project-tech {
+            justify-content: center;
+        }
+        
+        /* Contact Section */
+        .contact-subtitle {
+            text-align: center;
+        }
+        
+        .contact-info {
+            text-align: center;
+        }
+        
+        .contact-item {
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .contact-item div {
+            text-align: center;
+        }
+        
+        .social-links {
+            text-align: center;
+        }
+        
+        .social-icons {
+            justify-content: center;
+        }
+        
+        .contact-form-wrapper {
+            text-align: center;
+        }
+        
+        .contact-form-wrapper h3 {
+            text-align: center;
+        }
+        
+        .form-group {
+            text-align: left;
+        }
+        
+        .form-group label {
+            text-align: left;
+            display: block;
+        }
+        
+        .btn-submit {
+            width: 100%;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+        }
+        
+        /* ========================================
+           TABLET - Medium Screens (768px+)
+           Transition: Mix of center and left
+        ======================================== */
+        @media screen and (min-width: 768px) {
+            /* Navigation */
+            .navbar .container {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+            
+            .nav-links {
+                justify-content: flex-end;
+            }
+            
+            /* Hero Section - Keep centered on tablet */
+            .hero-content {
+                text-align: center;
+            }
+            
+            /* About Section */
+            .about-text {
+                text-align: left;
+            }
+            
+            .about-text > p {
+                text-align: left;
+            }
+            
+            .expertise-areas {
+                text-align: left;
+            }
+            
+            .area {
+                text-align: left;
+            }
+            
+            .area h3 {
+                text-align: left;
+            }
+            
+            .area p {
+                text-align: left;
+            }
+            
+            /* Skills - Keep centered for grid layout */
+            .skill-category {
+                text-align: center;
+            }
+            
+            /* Projects */
+            .project-card {
+                text-align: left;
+            }
+            
+            .project-card h3,
+            .project-card p {
+                text-align: left;
+            }
+            
+            .project-tech {
+                justify-content: flex-start;
+            }
+            
+            /* Contact Section */
+            .contact-info {
+                text-align: left;
+            }
+            
+            .contact-item {
+                justify-content: flex-start;
+                text-align: left;
+            }
+            
+            .contact-item div {
+                text-align: left;
+            }
+            
+            .social-links {
+                text-align: left;
+            }
+            
+            .social-icons {
+                justify-content: flex-start;
+            }
+            
+            .contact-form-wrapper {
+                text-align: left;
+            }
+            
+            .contact-form-wrapper h3 {
+                text-align: left;
+            }
+            
+            .btn-submit {
+                width: auto;
+            }
+        }
+        
+        /* ========================================
+           DESKTOP - Large Screens (1024px+)
+           Final: Optimized alignments
+        ======================================== */
+        @media screen and (min-width: 1024px) {
+            /* Body reset for desktop */
+            body {
+                text-align: left;
+            }
+            
+            /* Section titles stay centered */
+            .section-title {
+                text-align: center;
+            }
+            
+            /* Hero - Can choose left or center */
+            .hero-content {
+                text-align: left;
+            }
+            
+            .hero-content h1,
+            .hero-content .title,
+            .hero-content .description {
+                text-align: left;
+            }
+            
+            .hero-buttons {
+                justify-content: flex-start;
+            }
+            
+            /* Contact subtitle centered */
+            .contact-subtitle {
+                text-align: center;
+            }
+            
+            /* Footer stays centered */
+            footer {
+                text-align: center;
+            }
+        }
+        
+        /* ========================================
+           EXTRA LARGE - Wide Screens (1440px+)
+        ======================================== */
+        @media screen and (min-width: 1440px) {
+            /* Add any extra-large screen adjustments here */
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -412,5 +706,3 @@
     </script>
 </body>
 </html>
-
-
