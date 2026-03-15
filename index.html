@@ -1,477 +1,712 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="Bir Roka - IT Support Officer | Infrastructure & Network Operations Specialist">
-
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
-<title>Bir Roka | IT Infrastructure & Support Professional</title>
-
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="bir-roka-logo.svg">
-
-<style>
-
-/* Mobile First */
-body{
-text-align:center;
-font-family:Arial, Helvetica, sans-serif;
-line-height:1.6;
-}
-
-/* Navigation */
-.navbar .container{
-flex-direction:column;
-text-align:center;
-}
-
-/* Hero */
-.hero-content{
-text-align:center;
-}
-
-/* Sections */
-.section-title{
-text-align:center;
-}
-
-/* Tablet */
-@media (min-width:768px){
-
-.navbar .container{
-flex-direction:row;
-justify-content:space-between;
-text-align:left;
-}
-
-.about-text{
-text-align:left;
-}
-
-.project-card{
-text-align:left;
-}
-
-.contact-info{
-text-align:left;
-}
-
-}
-
-/* Desktop */
-@media (min-width:1024px){
-
-body{
-text-align:left;
-}
-
-.section-title{
-text-align:center;
-}
-
-.hero-content{
-text-align:left;
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bir Roka - Cloud Engineer | System Administrator | Network Engineer">
+    
+    <!-- 🔒 Force HTTPS -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <title>Bir Roka | IT Infrastructure Professional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="bir-roka-logo.svg">
+    
+    <!-- Mobile-First Text Alignment Styles -->
+    <style>
+        /* ========================================
+           MOBILE FIRST - Base Styles (320px+)
+           Default: Center aligned for mobile
+        ======================================== */
+        
+        /* Global Mobile Text Alignment */
+        body {
+            text-align: center;
+        }
+        
+        /* Navigation */
+        .navbar .container {
+            text-align: center;
+            flex-direction: column;
+        }
+        
+        .nav-links {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        /* Hero Section */
+        .hero-content {
+            text-align: center;
+        }
+        
+        .hero-content h1,
+        .hero-content .title,
+        .hero-content .description {
+            text-align: center;
+        }
+        
+        .hero-buttons {
+            justify-content: center;
+            flex-wrap: wrap;
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+        }
+        
+        /* About Section */
+        .about-text {
+            text-align: center;
+        }
+        
+        .about-text p {
+            text-align: center;
+        }
+        
+        .expertise-areas {
+            text-align: center;
+        }
+        
+        .area {
+            text-align: center;
+        }
+        
+        .area h3,
+        .area p {
+            text-align: center;
+        }
+        
+        /* Skills Section */
+        .skill-category {
+            text-align: center;
+        }
+        
+        .skill-category h3 {
+            text-align: center;
+        }
+        
+        .skill-tags {
+            justify-content: center;
+        }
+        
+        /* Projects Section */
+        .project-card {
+            text-align: center;
+        }
+        
+        .project-card h3,
+        .project-card p {
+            text-align: center;
+        }
+        
+        .project-tech {
+            justify-content: center;
+        }
+        
+        /* Contact Section */
+        .contact-subtitle {
+            text-align: center;
+        }
+        
+        .contact-info {
+            text-align: center;
+        }
+        
+        .contact-item {
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .contact-item div {
+            text-align: center;
+        }
+        
+        .social-links {
+            text-align: center;
+        }
+        
+        .social-icons {
+            justify-content: center;
+        }
+        
+        .contact-form-wrapper {
+            text-align: center;
+        }
+        
+        .contact-form-wrapper h3 {
+            text-align: center;
+        }
+        
+        .form-group {
+            text-align: left;
+        }
+        
+        .form-group label {
+            text-align: left;
+            display: block;
+        }
+        
+        .btn-submit {
+            width: 100%;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+        }
+        
+        /* ========================================
+           TABLET - Medium Screens (768px+)
+           Transition: Mix of center and left
+        ======================================== */
+        @media screen and (min-width: 768px) {
+            /* Navigation */
+            .navbar .container {
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: left;
+            }
+            
+            .nav-links {
+                justify-content: flex-end;
+            }
+            
+            /* Hero Section - Keep centered on tablet */
+            .hero-content {
+                text-align: center;
+            }
+            
+            /* About Section */
+            .about-text {
+                text-align: left;
+            }
+            
+            .about-text > p {
+                text-align: left;
+            }
+            
+            .expertise-areas {
+                text-align: left;
+            }
+            
+            .area {
+                text-align: left;
+            }
+            
+            .area h3 {
+                text-align: left;
+            }
+            
+            .area p {
+                text-align: left;
+            }
+            
+            /* Skills - Keep centered for grid layout */
+            .skill-category {
+                text-align: center;
+            }
+            
+            /* Projects */
+            .project-card {
+                text-align: left;
+            }
+            
+            .project-card h3,
+            .project-card p {
+                text-align: left;
+            }
+            
+            .project-tech {
+                justify-content: flex-start;
+            }
+            
+            /* Contact Section */
+            .contact-info {
+                text-align: left;
+            }
+            
+            .contact-item {
+                justify-content: flex-start;
+                text-align: left;
+            }
+            
+            .contact-item div {
+                text-align: left;
+            }
+            
+            .social-links {
+                text-align: left;
+            }
+            
+            .social-icons {
+                justify-content: flex-start;
+            }
+            
+            .contact-form-wrapper {
+                text-align: left;
+            }
+            
+            .contact-form-wrapper h3 {
+                text-align: left;
+            }
+            
+            .btn-submit {
+                width: auto;
+            }
+        }
+        
+        /* ========================================
+           DESKTOP - Large Screens (1024px+)
+           Final: Optimized alignments
+        ======================================== */
+        @media screen and (min-width: 1024px) {
+            /* Body reset for desktop */
+            body {
+                text-align: left;
+            }
+            
+            /* Section titles stay centered */
+            .section-title {
+                text-align: center;
+            }
+            
+            /* Hero - Can choose left or center */
+            .hero-content {
+                text-align: left;
+            }
+            
+            .hero-content h1,
+            .hero-content .title,
+            .hero-content .description {
+                text-align: left;
+            }
+            
+            .hero-buttons {
+                justify-content: flex-start;
+            }
+            
+            /* Contact subtitle centered */
+            .contact-subtitle {
+                text-align: center;
+            }
+            
+            /* Footer stays centered */
+            footer {
+                text-align: center;
+            }
+        }
+        
+        /* ========================================
+           EXTRA LARGE - Wide Screens (1440px+)
+        ======================================== */
+        @media screen and (min-width: 1440px) {
+            /* Add any extra-large screen adjustments here */
+        }
+    </style>
 </head>
-
 <body>
-
-<!-- NAVIGATION -->
-
-<nav class="navbar">
-<div class="container">
-
-<h1 class="logo">Bir Roka</h1>
-
-<ul class="nav-links">
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#education">Education</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-
-</div>
-</nav>
-
-
-<!-- HERO -->
-
-<section id="home" class="hero">
-
-<div class="container">
-
-<div class="hero-content">
-
-<h1>Hi, I'm <span class="highlight">Bir Roka</span></h1>
-
-<p class="title">
-IT Support Officer | Infrastructure & Network Operations
-</p>
-
-<p class="description">
-Experienced IT professional with over 5 years in IT support, infrastructure management, and network operations.  
-Focused on maintaining secure, reliable, and efficient IT environments.
-</p>
-
-<div class="hero-buttons">
-
-<a href="#contact" class="btn">Contact Me</a>
-
-<a href="#experience" class="btn btn-outline">View Experience</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about" class="about">
-
-<div class="container">
-
-<h2 class="section-title">About Me</h2>
-
-<div class="about-content">
-
-<div class="about-text">
-
-<p>
-I am an experienced IT professional with strong expertise in IT support, network infrastructure, and system administration.
-</p>
-
-<p>
-I specialize in troubleshooting hardware, software, and network issues while maintaining enterprise IT environments including servers, firewalls, MDM systems, and CCTV infrastructure.
-</p>
-
-<p>
-I am passionate about improving IT operations, minimizing downtime, mentoring junior staff, and supporting internal development teams with reliable technical solutions.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- EXPERIENCE -->
-
-<section id="experience" class="projects">
-
-<div class="container">
-
-<h2 class="section-title">Professional Experience</h2>
-
-<div class="projects-grid">
-
-
-<div class="project-card">
-
-<h3>IT Support Officer – EB Pearls</h3>
-
-<p>
-Oversaw IT operations resolving complex hardware, software and network issues across desktops, servers and developer workstations.
-</p>
-
-<ul>
-<li>Maintained firewall configurations and system security</li>
-<li>Managed MDM devices and CCTV infrastructure</li>
-<li>Handled IT workflows via Jira and HubSpot</li>
-<li>Performed patch management and system updates</li>
-<li>Mentored junior IT staff</li>
-</ul>
-
-<p><strong>2025 – Present | Lalitpur, Nepal</strong></p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<h3>Pearson Certified TA & IT Support Officer – The British College</h3>
-
-<ul>
-<li>Managed PTE testing infrastructure</li>
-<li>Ensured smooth candidate check-in and verification</li>
-<li>Troubleshot system and hardware issues</li>
-<li>Performed preventive system maintenance</li>
-</ul>
-
-<p><strong>2022 – Present | Kathmandu</strong></p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<h3>Associate IT Support Engineer – EB Pearls</h3>
-
-<ul>
-<li>Managed Active Directory and user permissions</li>
-<li>Maintained IT asset lifecycle and deployment</li>
-<li>Supported firewall and MDM systems</li>
-<li>Assisted in internal system upgrades</li>
-</ul>
-
-<p><strong>2023 – 2025 | Lalitpur</strong></p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<h3>IT Support Technician – EB Pearls</h3>
-
-<ul>
-<li>Provided first-level technical support</li>
-<li>Supported Windows OS and Office 365</li>
-<li>Resolved LAN and WiFi connectivity issues</li>
-</ul>
-
-<p><strong>2021 – 2023 | Lalitpur</strong></p>
-
-</div>
-
-
-
-<div class="project-card">
-
-<h3>Technical Support Representative – Kalash Services Pvt Ltd</h3>
-
-<ul>
-<li>Resolved internet connectivity issues</li>
-<li>Configured routers, switches and ONTs</li>
-<li>Provided remote and onsite technical support</li>
-<li>Worked with NOC for escalations</li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- SKILLS -->
-
-<section id="skills" class="skills">
-
-<div class="container">
-
-<h2 class="section-title">Technical Skills</h2>
-
-<div class="skills-grid">
-
-<div class="skill-category">
-
-<h3>Networking</h3>
-
-<div class="skill-tags">
-
-<span>LAN/WAN</span>
-<span>TCP/IP</span>
-<span>DNS</span>
-<span>DHCP</span>
-<span>SNMP</span>
-<span>RDP</span>
-
-</div>
-
-</div>
-
-
-
-<div class="skill-category">
-
-<h3>Systems & Virtualization</h3>
-
-<div class="skill-tags">
-
-<span>Windows Server</span>
-<span>Active Directory</span>
-<span>Hyper-V</span>
-<span>VMware</span>
-
-</div>
-
-</div>
-
-
-
-<div class="skill-category">
-
-<h3>Security & Infrastructure</h3>
-
-<div class="skill-tags">
-
-<span>Firewall Configuration</span>
-<span>Sophos Firewall</span>
-<span>Wireless Network Implementation</span>
-
-</div>
-
-</div>
-
-
-
-<div class="skill-category">
-
-<h3>Hardware & Support</h3>
-
-<div class="skill-tags">
-
-<span>Hardware Troubleshooting</span>
-<span>Software Installation</span>
-<span>Remote Support</span>
-<span>Monitoring Tools</span>
-
-</div>
-
-</div>
-
-
-
-<div class="skill-category">
-
-<h3>Other Systems</h3>
-
-<div class="skill-tags">
-
-<span>CCTV Systems</span>
-<span>DVR/NVR</span>
-<span>MDM Devices</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- EDUCATION -->
-
-<section id="education" class="about">
-
-<div class="container">
-
-<h2 class="section-title">Education</h2>
-
-<div class="about-text">
-
-<p>
-<strong>Bachelor of Education in Mathematics</strong>  
-Rapti Babai Campus  
-Tulsipur, Nepal
-</p>
-
-<p>
-<strong>Higher Secondary Education</strong>  
-Rapti Babai Campus
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- CERTIFICATIONS -->
-
-<section class="skills">
-
-<div class="container">
-
-<h2 class="section-title">Certifications</h2>
-
-<div class="skill-tags">
-
-<span>Computer Hardware & Networking – Jetking</span>
-<span>CCNA Routing & Switching Concepts</span>
-<span>Server Installation & Configuration</span>
-<span>Network Design & Implementation</span>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- CONTACT -->
-
-<section id="contact" class="contact">
-
-<div class="container">
-
-<h2 class="section-title">Contact</h2>
-
-<p class="contact-subtitle">
-Let's connect for opportunities or collaborations.
-</p>
-
-<div class="contact-info">
-
-<p>Email: birroka@example.com</p>
-
-<p>Phone: +977 98*****492</p>
-
-<p>Location: Kathmandu, Nepal</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="container">
-
-<p>© 2026 Bir Roka</p>
-
-<p>IT Infrastructure | Network Operations | Technical Support</p>
-
-</div>
-
-</footer>
-
-
-
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Bir Roka</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Bir Roka</span></h1>
+                <p class="title">Cloud Engineer | System Administrator | Network Engineer</p>
+                <p class="description">Building and managing secure, scalable IT infrastructure solutions</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn">Get In Touch</a>
+                    <a href="#projects" class="btn btn-outline">View My Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm <strong>Bir Roka</strong>, an IT Infrastructure Professional specializing in three key areas:</p>
+                    
+                    <div class="expertise-areas">
+                        <div class="area">
+                            <div class="area-icon">☁️</div>
+                            <h3>Cloud Engineering</h3>
+                            <p>Expert in AWS, Azure, and Google Cloud Platform. I design, deploy, and manage scalable cloud infrastructure with focus on automation and cost optimization.</p>
+                        </div>
+                        
+                        <div class="area">
+                            <div class="area-icon">🖥️</div>
+                            <h3>System Administration</h3>
+                            <p>Proficient in Linux and Windows server management. I ensure optimal performance, security, and reliability of IT systems through proactive monitoring and maintenance.</p>
+                        </div>
+                        
+                        <div class="area">
+                            <div class="area-icon">🌐</div>
+                            <h3>Network Engineering</h3>
+                            <p>Skilled in designing and implementing enterprise networks. I configure routers, switches, firewalls, and VPNs to ensure secure and efficient connectivity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>☁️ Cloud Platforms</h3>
+                    <div class="skill-tags">
+                        <span>AWS</span>
+                        <span>Microsoft Azure</span>
+                        <span>Google Cloud Platform</span>
+                        <span>DigitalOcean</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🖥️ Operating Systems</h3>
+                    <div class="skill-tags">
+                        <span>Linux (RHEL/CentOS)</span>
+                        <span>Ubuntu/Debian</span>
+                        <span>Windows Server</span>
+                        <span>Active Directory</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🌐 Networking</h3>
+                    <div class="skill-tags">
+                        <span>TCP/IP</span>
+                        <span>Cisco IOS</span>
+                        <span>VPN (IPSec/SSL)</span>
+                        <span>Firewall Management</span>
+                        <span>DNS/DHCP</span>
+                        <span>Load Balancing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🔧 DevOps & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>Terraform</span>
+                        <span>Ansible</span>
+                        <span>Jenkins</span>
+                        <span>Git/GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>📊 Monitoring</h3>
+                    <div class="skill-tags">
+                        <span>Prometheus</span>
+                        <span>Grafana</span>
+                        <span>ELK Stack</span>
+                        <span>Nagios</span>
+                        <span>Zabbix</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>💻 Scripting</h3>
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Bash/Shell</span>
+                        <span>PowerShell</span>
+                        <span>YAML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-icon">☁️</div>
+                    <h3>Cloud Infrastructure Migration</h3>
+                    <p>Migrated enterprise infrastructure to AWS with high availability, auto-scaling, and disaster recovery implementation.</p>
+                    <div class="project-tech">
+                        <span>AWS</span>
+                        <span>Terraform</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🌐</div>
+                    <h3>Enterprise Network Design</h3>
+                    <p>Designed and deployed multi-site network infrastructure with SD-WAN, VPN, and advanced security features.</p>
+                    <div class="project-tech">
+                        <span>Cisco</span>
+                        <span>VPN</span>
+                        <span>Firewall</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🖥️</div>
+                    <h3>Server Automation Platform</h3>
+                    <p>Built automation platform for managing 200+ Linux servers using Ansible, reducing manual tasks by 80%.</p>
+                    <div class="project-tech">
+                        <span>Linux</span>
+                        <span>Ansible</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🔄</div>
+                    <h3>CI/CD Pipeline Implementation</h3>
+                    <p>Implemented automated CI/CD pipelines using Jenkins and Kubernetes for faster and reliable deployments.</p>
+                    <div class="project-tech">
+                        <span>Jenkins</span>
+                        <span>Kubernetes</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">📊</div>
+                    <h3>Infrastructure Monitoring System</h3>
+                    <p>Deployed comprehensive monitoring solution with Prometheus and Grafana for real-time infrastructure visibility.</p>
+                    <div class="project-tech">
+                        <span>Prometheus</span>
+                        <span>Grafana</span>
+                        <span>ELK</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">🔒</div>
+                    <h3>Security Hardening Project</h3>
+                    <p>Led security hardening initiative across cloud and on-premises infrastructure, achieving compliance standards.</p>
+                    <div class="project-tech">
+                        <span>Security</span>
+                        <span>IAM</span>
+                        <span>Compliance</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Have a project in mind? Let's discuss how I can help!</p>
+            
+            <div class="contact-container">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:birroka@example.com">birroka@example.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+1234567890">+97798*****492</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Connect With Me</h4>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/birroka" target="_blank" title="LinkedIn">💼</a>
+                            <a href="https://github.com/birroka" target="_blank" title="GitHub">💻</a>
+                            <a href="https://twitter.com/birroka" target="_blank" title="Twitter">🐦</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Send Me a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Select Subject --</option>
+                                <option value="cloud">Cloud Engineering</option>
+                                <option value="system">System Administration</option>
+                                <option value="network">Network Engineering</option>
+                                <option value="devops">DevOps & Automation</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project or inquiry..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">Sending...</span>
+                        </button>
+
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Bir Roka - Cloud Engineer | System Administrator | Network Engineer</p>
+            <p class="footer-note">Building reliable infrastructure, one server at a time 🚀</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar Scroll Effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.1)';
+            } else {
+                navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
+            }
+        });
+
+        // Contact Form Handling
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        const btnText = document.querySelector('.btn-text');
+        const btnLoading = document.querySelector('.btn-loading');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            // Show loading state
+            btnText.style.display = 'none';
+            btnLoading.style.display = 'inline';
+            
+            // Simulate form submission (replace with actual backend)
+            setTimeout(() => {
+                // Show success message
+                formMessage.innerHTML = `
+                    <div class="success-message">
+                        ✓ Thank you, ${formData.name}! Your message has been sent successfully. 
+                        I'll get back to you at ${formData.email} soon.
+                    </div>
+                `;
+                
+                // Reset form
+                contactForm.reset();
+                
+                // Reset button state
+                btnText.style.display = 'inline';
+                btnLoading.style.display = 'none';
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.innerHTML = '';
+                }, 5000);
+            }, 1500);
+        });
+
+        // Form validation feedback
+        const inputs = document.querySelectorAll('.contact-form input, .contact-form textarea, .contact-form select');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                if (this.value.trim() === '' && this.hasAttribute('required')) {
+                    this.style.borderColor = '#ef4444';
+                } else {
+                    this.style.borderColor = '#e2e8f0';
+                }
+            });
+
+            input.addEventListener('focus', function() {
+                this.style.borderColor = '#3b82f6';
+            });
+        });
+    </script>
 </body>
-
 </html>
+
+
+
+
+
+
